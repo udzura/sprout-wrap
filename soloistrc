@@ -27,14 +27,14 @@ recipes:
 - pivotal_workstation::postgres
 - sprout-osx-apps::imagemagick
 - sprout-osx-apps::node_js
-# - pivotal_workstation::qt
+- pivotal_workstation::qt
 
 # apps
 - pivotal_workstation::screen_sharing_app
 - sprout-osx-apps::skype
 - sprout-osx-apps::shiftit
 - sprout-osx-apps::firefox
-- sprout-osx-apps::dropbox
+#- sprout-osx-apps::dropbox
 - sprout-osx-apps::chrome
 - pivotal_workstation::mouse_locator
 - sprout-osx-apps::menumeters
@@ -46,6 +46,13 @@ recipes:
 # - sprout-osx-apps::keycastr
 - sprout-osx-apps::virtualbox
 - sprout-osx-apps::vagrant
+
+- sprout-osx-apps::zsh
+- sprout-osx-apps::tig
+- sprout-osx-apps::java
+- pivotal_workstation::nginx
+- pivotal_workstation::memcached
+- pivotal_workstation::mongodb
 
 # apps (editors)
 # - pivotal_workstation::textmate
@@ -60,6 +67,9 @@ recipes:
 # - pivotal_workstation::rubymine_preferences_pivotal
 
 node_attributes:
+  sprout:
+    rbenv:
+      default_ruby: 2.0.0-p247
   git_pairs_domain: paperboy.co.jp
   git_projects:
     -
