@@ -53,6 +53,7 @@ recipes:
 - pivotal_workstation::nginx
 - pivotal_workstation::memcached
 - pivotal_workstation::mongodb
+- pivotal_workstation::redis
 
 # apps (editors)
 # - pivotal_workstation::textmate
@@ -65,6 +66,8 @@ recipes:
 
 # - pivotal_workstation::rubymine
 # - pivotal_workstation::rubymine_preferences_pivotal
+
+- udzura_workstation
 
 node_attributes:
   sprout:

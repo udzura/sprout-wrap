@@ -100,6 +100,15 @@ GIT
       homebrew (>= 0.0.0)
       sprout-osx-base (>= 0.0.0)
 
+GIT
+  remote: git://github.com/udzura/udzura_workstation.git
+  ref: master
+  sha: a23734295b89a75203e3daa44f7eef8006b0536d
+  specs:
+    udzura_workstation (0.2.20140107)
+      sprout-osx-base (>= 0.0.0)
+      sprout-osx-settings (>= 0.0.0)
+
 PATH
   remote: site-cookbooks/meta
   specs:
@@ -120,4 +129,5 @@ DEPENDENCIES
   sprout-osx-rubymine (>= 0)
   sprout-osx-settings (>= 0)
   sprout-pivotal (>= 0)
+  udzura_workstation (>= 0)
 

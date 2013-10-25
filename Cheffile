@@ -1,5 +1,9 @@
 site 'http://community.opscode.com/api/v1'
 
+cookbook 'udzura_workstation',
+#  :path => '../udzura_workstation' # for dev
+  :git => 'git://github.com/udzura/udzura_workstation.git'
+
 cookbook 'meta',
   :path => 'site-cookbooks/meta'
 
