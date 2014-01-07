@@ -13,11 +13,11 @@ recipes:
 - sprout-osx-settings::global_environment_variables
 
 # development (general)
-- sprout-osx-base::workspace_directory
+- pivotal_workstation::workspace_directory
 - pivotal_workstation::unix_essentials
-- sprout-osx-git::git_projects
+- pivotal_workstation::git_projects
 - pivotal_workstation::git_config_global_defaults
-- sprout-osx-git::git_scripts
+- pivotal_workstation::git_scripts
 
 # development (rails)
 # - pivotal_workstation::rvm
@@ -30,20 +30,20 @@ recipes:
 - pivotal_workstation::qt
 
 # apps
-- pivotal_workstation::screen_sharing_app
+# - pivotal_workstation::screen_sharing_app
 - sprout-osx-apps::skype
-- sprout-osx-apps::shiftit
+# - pivotal_workstation::shiftit
 - sprout-osx-apps::firefox
 #- sprout-osx-apps::dropbox
 - sprout-osx-apps::chrome
-- pivotal_workstation::mouse_locator
-- sprout-osx-apps::menumeters
-- pivotal_workstation::bettertouchtool
-# - sprout-osx-apps::ccmenu
+# - pivotal_workstation::mouse_locator
+# - pivotal_workstation::menumeters
+# - pivotal_workstation::bettertouchtool
+# - pivotal_workstation::ccmenu
 # - pivotal_workstation::github_for_mac
-- sprout-osx-apps::gitx
+- pivotal_workstation::gitx
 # - sprout-osx-apps::iterm2
-# - sprout-osx-apps::keycastr
+# - pivotal_workstation::keycastr
 - sprout-osx-apps::virtualbox
 - sprout-osx-apps::vagrant
 
@@ -51,10 +51,10 @@ recipes:
 # - pivotal_workstation::oh_my_zsh
 - sprout-osx-apps::tig
 - sprout-osx-apps::java
-- pivotal_workstation::nginx
-- pivotal_workstation::memcached
-- pivotal_workstation::mongodb
-- pivotal_workstation::redis
+# - pivotal_workstation::nginx
+# - pivotal_workstation::memcached
+# - pivotal_workstation::mongodb
+# - pivotal_workstation::redis
 
 # apps (editors)
 # - pivotal_workstation::textmate
@@ -73,7 +73,9 @@ recipes:
 node_attributes:
   sprout:
     rbenv:
-      default_ruby: 2.0.0-p247
+      rubies:
+        2.1.0: {}
+      default_ruby: 2.1.0
   git_pairs_domain: paperboy.co.jp
   git_projects:
     -
