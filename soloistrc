@@ -48,6 +48,7 @@ recipes:
 - sprout-osx-apps::vagrant
 
 - sprout-osx-apps::zsh
+# - pivotal_workstation::oh_my_zsh
 - sprout-osx-apps::tig
 - sprout-osx-apps::java
 - pivotal_workstation::nginx
