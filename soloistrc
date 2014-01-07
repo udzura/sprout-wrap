@@ -13,11 +13,11 @@ recipes:
 - sprout-osx-settings::global_environment_variables
 
 # development (general)
-- pivotal_workstation::workspace_directory
+- sprout-osx-base::workspace_directory
 - pivotal_workstation::unix_essentials
-- pivotal_workstation::git_projects
+- sprout-osx-git::git_projects
 - pivotal_workstation::git_config_global_defaults
-- pivotal_workstation::git_scripts
+- sprout-osx-git::git_scripts
 
 # development (rails)
 # - pivotal_workstation::rvm
@@ -27,7 +27,7 @@ recipes:
 - pivotal_workstation::postgres
 - sprout-osx-apps::imagemagick
 - sprout-osx-apps::node_js
-- pivotal_workstation::qt
+# - pivotal_workstation::qt
 
 # apps
 # - pivotal_workstation::screen_sharing_app
@@ -41,7 +41,7 @@ recipes:
 # - pivotal_workstation::bettertouchtool
 # - pivotal_workstation::ccmenu
 # - pivotal_workstation::github_for_mac
-- pivotal_workstation::gitx
+- sprout-osx-apps::gitx
 # - sprout-osx-apps::iterm2
 # - pivotal_workstation::keycastr
 - sprout-osx-apps::virtualbox
